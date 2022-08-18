@@ -4,7 +4,6 @@ describe("End to end test", () => {
 
   beforeEach(() => {
     cy.visit('https://www.demoblaze.com/');
-    Cypress.Cookies.preserveOnce("PHPSESSID");
     MainPage.logInUserByNameAndPassword("U2", "U2");
     cy.wait(1234);
   });
